@@ -4,7 +4,17 @@ Created on Sun Jun 10 09:33:49 2018
 
 @author: Balasubramaniam
 """
-class PolicyHolder:
+
+from abc import ABC,abstractmethod
+import datetime
+
+class RenewalReminder(ABC):    
+    @abstractmethod
+    def generateReminder():pass   
+
+
+
+class PolicyHolder(RenewalReminder):
     
     def __init__(self,pno,fdate,tdate,name,gender,dob):
         self.__policyNo=pno
@@ -22,6 +32,9 @@ class PolicyHolder:
     
     def getToDate(self):
         return self.__toDate
+    
+    def generateReminder(self):
+        return self.__toDate + datetime.timedelta(days=10) 
     
     def getName(self):
         return self.__policyHolderName

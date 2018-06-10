@@ -18,6 +18,8 @@ vehicleObj.setPolicyHolder(PolicyHolder(237467,fromDate,toDate,"Sanjay","Male",d
 vehicleObj.setDriver(Driver(429654,"Kiran"))
 
 print(vehicleObj.getPolicyHolder().getName(),"--->",vehicleObj.getRegNo())
+
+print(vehicleObj.getPolicyHolder().generateReminder().strftime("%d/%m/%Y"))
 print(Vehicle.baseRoadTax)
 
 print(vehicleObj.computeTaxByVehicle(2))
