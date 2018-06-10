@@ -60,7 +60,9 @@ class LowEndVehicle(Vehicle):
     def __init__(self,regNo,engineNo,color,childLock):
         Vehicle.__init__(self,regNo,engineNo,color) #invoke super class
         self.__childLock=childLock
-        
+     
+    def setABS(self,airbrake):
+        self.__abs=airbrake
         
     
     
