@@ -25,3 +25,14 @@ print(vehicleObj.computeTaxByVehicle(2))
 vehicleObj=LowEndVehicle("TN-02-4556",43876587435,"Red",True)
 
 print(vehicleObj.computeTaxByVehicle(4))
+
+
+#upgrading the vehicle
+
+vehicleObj.setABS(True)
+
+#removing airbrake
+vehicleObj.setABS(False)
+
+
+
