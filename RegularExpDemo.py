@@ -148,7 +148,22 @@ x = re.search(expr,s)
 print(x.group('hours'))
 print(x.group('minutes'))
     
-    
-    
-    
-    
+'''
+re_pattern=r"[A-Z]{5,25}"
+
+userName=input("Enter Name")
+
+result=re.search(re_pattern,userName)
+if(result):
+    print("Match Found")
+else:
+    print("Match not found")
+
+'''
+re_pattern=r"(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{4,})"
+password=input("Enter Password")
+result=re.search(re_pattern,password)
+if(result):
+    print("Match Found")
+else:
+    print("Match not found")
