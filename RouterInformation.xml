@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Routers>
+<Router SNO="1233">
+<HostName>2811</HostName>
+<IpAddress>192.168.204.1</IpAddress>
+<Interfaces>
+<Interface>
+<InterfaceNo>FA1</InterfaceNo>
+<IpAddress>192.168.210.2</IpAddress>
+<Subnetmask>255.255.255.0</Subnetmask>
+<Speed>100</Speed>
+<Duplex>full</Duplex>
+</Interface>
+</Interfaces>
+</Router>
+<Router SNO="1254">
+<HostName>1841</HostName>
+<IpAddress>192.168.204.10</IpAddress>
+<Interfaces>
+<Interface>
+<InterfaceNo>FA4</InterfaceNo>
+<IpAddress>192.168.210.3</IpAddress>
+<Subnetmask>255.255.255.0</Subnetmask>
+<Speed>120</Speed>
+<Duplex>full</Duplex>
+</Interface>
+<Interface>
+<InterfaceNo>FA6</InterfaceNo>
+<IpAddress>192.168.210.4</IpAddress>
+<Subnetmask>255.255.255.0</Subnetmask>
+<Speed>90</Speed>
+<Duplex>full</Duplex>
+</Interface>
+</Interfaces>
+</Router>
+</Routers>
